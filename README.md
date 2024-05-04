@@ -16,3 +16,4 @@ HTML语法
 结构化设计
 完全免费
 
+完整文档和使用方法：http://v6.furrybox.cn:666/page/2-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B
