@@ -1,0 +1,8 @@
+<web:网站名>FastBOX-帮助中心</web:网站名>
+<web:网站描述>极致轻量的个人文章系统，支持丰富的主题扩展</web:网站描述>
+<web:网站管理员>清雨</web:网站管理员>
+<web:联系>3220257676</web:联系>
+<web:logo>/logo.png</web:logo>
+<web:管理入口>/admin</web:管理入口>
+<web:管理账号>admin</web:管理账号>
+<web:管理密码>123456</web:管理密码>

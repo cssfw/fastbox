@@ -1,0 +1,19 @@
+<div class="hidden mdui-card">
+<div class="hidden mdui-card-media">
+    <img src="[tag:封面]"/>
+<div class="hidden mdui-card-menu">
+      <button class="hidden mdui-btn mdui-btn-icon mdui-text-color-white">
+        <i class="hidden mdui-icon material-icons">favorite</i>
+      </button>
+    </div>
+  </div>
+  <div class="hidden mdui-card-primary">
+    <div class="hidden mdui-card-primary-title"><i class="mdui-text-color-blue mdui-icon material-icons">dashboard</i><b>[tag:标题]</b></div>
+    <div class="hidden mdui-card-primary-subtitle">[tag:时间] By [tag:管理员]</div>
+  </div>
+  <div class="hidden mdui-card-actions">
+    <a mdui-tooltip="{content: '查看文章', position: 'top'}" href="[tag:链接]" class="hidden b_blue mdui-btn mdui-ripple mdui-float-right"><i class="hidden mdui-icon material-icons">insert_emoticon</i>查看</a>
+    </a>
+  </div>
+
+</div>

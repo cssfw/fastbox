@@ -1,0 +1,474 @@
+.y-tooldar {
+vertical-align: middle;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;   
+    padding-left: 8px;
+    padding-right: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size:33px;
+background-color: rgba(255, 255, 255, 0);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+}
+
+.y-card {
+
+border-radius:11px;
+margin:0;
+    padding: 2px;   
+    padding-left: 8px;
+    padding-right: 8px;
+width:90%;
+max-width:400px;
+background-color:#fff;
+-webkit-box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12);
+box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12);
+ margin:auto;
+  transition: box-shadow 0.35s ease;9
+
+}
+.y-card:hover {
+box-shadow:0 15px 15px -13px rgba(0,0,0,.2),0 8px 10px 2px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.02);
+}
+			@font-face {
+				font-family:'ali';
+				src: url(./ali.ttf);
+			}
+			.ali{
+				font-family: 'ali';
+				text-shadow: none;
+			}
+		
+.y-btn {
+  font-family: 'ali';
+  max-width: 80%;
+  padding: 5px 20px;
+  border: none;
+  font-size: 17px;
+  color: white;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+    background: rgb(0,140,255);
+  box-shadow: 0 0 10px rgb(0,140,255);
+  transition: box-shadow 0.35s ease;
+  transition: background 0.35s ease;
+}
+
+.y-btn:hover {
+  background: rgb(25,55,25);
+  box-shadow: 0 0 100px rgb(0,140,255);
+}
+
+.qing-dialog {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.18);
+border-radius: 10px;
+box-shadow:  6px 6px 14px #7b7b7b,
+             -6px -6px 14px #ffffff;
+             
+      border-radius: 12px;
+      -webkit-border-radius: 12px;
+      color: rgba(0, 25, 25, 0.9);
+      padding: 15px;
+      margin: auto;
+      font-weight: bolder;
+      display: none;
+      z-index: 999;
+        transition: padding 0.2s ease;
+        max-width: 80%;
+max-height: 60%;
+overflow-y: scroll;
+    }
+    
+    
+.qing-dialog:hover {
+padding: 10px;
+
+}
+
+
+    .qing-dialog.open {
+      display: block;
+      animation: fadeIn 0.3s;
+    }
+
+    .qing-dialog.close {
+      animation: fadeOut 0.3s;
+    }
+
+    .qing-dialog .content {
+      padding: 20px;
+    }
+
+    .qing-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.18);
+      
+
+box-shadow:  6px 6px 14px #7b7b7b,
+             -6px -6px 14px #ffffff;
+      
+      
+      padding: 15px;
+      margin: auto;
+      font-weight: bolder;
+      display: none;
+      z-index: 998;
+    }
+
+    .qing-overlay.open {
+      display: block;
+      animation: vfadeIn 0.3s;
+    }
+
+    .qing-overlay.close {
+      animation: vfadeOut 0.3s;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+background-color: rgba(255, 255, 255, 1);
+left: 0%;
+      }
+      to {
+        opacity: 1;
+background-color: rgba(255, 255, 255, 0);
+left: 50%
+      }
+    }
+
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+        left:50%;
+
+      }
+      to {
+        opacity: 0;
+        left:100%;
+
+      }
+    }
+    
+    
+    @keyframes vfadeIn {
+      from {
+        width:0%;
+        backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px);
+border: 1px solid rgba(255, 255, 255, 0);
+      }
+      to {
+        width:100%;
+        backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.18);
+      }
+    }
+
+    @keyframes vfadeOut {
+      from {
+        backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.18);
+        
+      }
+      to {
+        backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px);
+border: 1px solid rgba(255, 255, 255, 0);
+        
+      }
+    }
+
+yt {
+font-size:25px;
+}
+
+
+a {
+  text-decoration: none; /* 删除下划线 */
+}
+
+.y-mh {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.y-mh:hover {
+  --blur: 5px;
+  -webkit-filter: blur(var(--blur));
+  filter: blur(var(--blur));
+}
+
+
+
+/* Container for the loader */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10em;
+}
+
+/* Circle elements */
+.circle {
+  width: 1em;
+  height: 1em;
+  margin: 0 0.25em;
+  border-radius: 50%;
+  background-color: #a8d5e2;
+  animation: wave 0.3s infinite ease-in-out;
+  transition: background-color 0.3s ease;
+}
+
+/* Animation */
+@keyframes wave {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-1em);
+  }
+}
+
+/* Delay for each circle */
+.circle:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.circle:nth-child(2) {
+  animation-delay: 0.05s;
+}
+
+.circle:nth-child(3) {
+  animation-delay: 0.1s;
+}
+
+.circle:nth-child(4) {
+  animation-delay: 0.15s;
+}
+
+.circle:nth-child(5) {
+  animation-delay: 0.2s;
+}
+  
+  
+#oopp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: white;
+        opacity: 1;
+      transition: opacity 0.3s; /* 添加淡出过渡效果，持续时间为0.3秒 */
+
+}
+/* 定义淡出动画 */
+    @keyframes fadeOut {
+      from { opacity: 1; }
+      to { opacity: 0; }
+    }
+    /* 设置元素初始状态 */
+    #oopp {
+      opacity: 1;
+      animation: fadeOut 0.3s forwards; /* 添加淡出动画，持续时间为2秒 */
+    }
+    
+    .to-fu {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 4px;
+grid-row-gap: 4px;
+}
+
+.it1 { grid-area: 1 / 1 / 4 / 3; }
+.it2 { grid-area: 1 / 3 / 3 / 6; }
+.it3 { grid-area: 3 / 3 / 4 / 6; }
+
+
+
+
+
+
+.card {
+ outline: none; 
+  width: 80%;
+  background: #fff480;
+  color: black;
+  position: relative;
+  border-radius: 2.5em;
+  padding: 2em;
+  transition: transform 0.4s ease;
+  max-height: 25%;
+}
+
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5em;
+  height: 25%;
+  transition: transform 0.4s ease;
+}
+
+.card .card-top, .card .card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .card-top p, .card .card-top .card-title, .card .card-bottom p, .card .card-bottom .card-title {
+  margin: 0;
+}
+
+.card .card-title {
+  font-weight: bold;
+}
+
+.card .card-top p, .card .card-bottom p {
+  font-weight: 25%;
+}
+
+.card .card-bottom {
+  align-items: flex-end;
+}
+
+.card .card-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+.card .card-image svg {
+  width: 4em;
+  height: 4em;
+  transition: transform 0.4s ease;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(0.97);
+}
+
+.card:hover .card-content {
+  transform: scale(0.96);
+}
+
+.card:hover .card-image svg {
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(0.9);
+}
+
+div {
+ outline: none; 
+ }
+
+
+
+.y-mui {
+      position: fixed;
+scale(0,0);
+            top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(255, 255, 255, 0);
+
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0);
+
+
+-webkit-box-shadow:0 5px 5px -3px rgba(0,0,0,.2),0 8px 10px 1px rgba(0,0,0,.14),0 3px 14px 2px rgba(0,0,0,.12);
+
+
+border-radius: 10px;
+
+
+
+
+
+      -webkit-border-radius: 10px;
+      color: rgba(0, 25, 25, 0.9);
+      padding: 15px;
+      margin: auto;
+      font-weight: bolder;
+      z-index: 9999;
+        width: 80%;        
+        max-width: 80%;       
+
+max-height: 60%;
+overflow-y: scroll;
+
+
+
+        transition: padding 0.2s ease;
+
+
+      animation: okin 4.5s;
+
+    }
+    
+    
+.y-mui:hover {
+padding: 10px;
+
+}
+
+
+
+
+
+    @keyframes okin {
+      from {
+      background: rgba(0, 0, 0, 1);
+
+padding: 1000px;
+        backdrop-filter: blur(0px);
+-webkit-backdrop-filter: blur(0px);
+border: 0px solid rgba(0, 0, 0, 1);
+      }
+      to {
+      
+padding: 15px;
+      background: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border: 0px solid rgba(255, 255, 255, 0);
+        height: 60%;
+        scale(1,1);
+      }
+    }
+    
+    
+    

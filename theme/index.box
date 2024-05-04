@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+  <meta name="renderer" content="webkit"/>
+  <meta name="force-rendering" content="webkit"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+  <!-- MDUI CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css">
+ <link rel="icon" href="[tag:logo]" type="image/x-icon">
+  <link rel="stylesheet" href="/main/ftip.css"/>
+  <!-- MDUI MORE CSS -->
+  <link rel="stylesheet" href="/UI/md.css"/>
+  <title>[tag:网站名]</title>
+</head>
+<body class="mdui-theme-primary-indigo">
+<div id="mdui-md-load">
+  <div class="mdui-progress">
+    <div class="mdui-progress-indeterminate"></div>
+  </div>
+</div>
+
+
+
+<div style="margin: 10px;">
+  <div class="f-tip-in"></div>
+<div class="row_us">
+<div class="hidden">
+
+[part:文章]
+
+
+
+
+  
+  </div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+<!-- MDUI JavaScript -->
+<script src="/UI/js/mdui.min.js"></script>
+
+
+<script>
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var element = document.getElementById("mdui-md-load");
+    element.classList.add("mdui-md-in");
+
+    window.addEventListener("load", function() {
+
+      element.classList.add("mdui-md-out");
+      
+    });
+  });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const hiddenElements = document.querySelectorAll(".hidden");
+    
+    let index = 0;
+    const interval = setInterval(() => {
+        if (index >= hiddenElements.length) {
+            clearInterval(interval);
+            return;
+        }
+        
+        const element = hiddenElements[index];
+        element.classList.add("in-on");
+        element.classList.remove("hidden");
+        
+        index++;
+    }, 35);
+});
+</script>
+
+<script>
+// 获取页面中所有的form表单
+var forms = document.getElementsByTagName('form');
+
+// 遍历所有form表单
+for (var i = 0; i < forms.length; i++) {
+    var form = forms[i];
+    
+    // 监听form表单的提交事件
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // 阻止表单默认提交行为
+        
+        // 发送请求
+        var formData = new FormData(form);
+        fetch(form.action, {
+            method: form.method,
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            // 将请求带来的结果输出
+            f.tip(data, 5);
+        })
+        .catch(error => {
+            f.tip(data, 1);
+        });
+    });
+}
+
+</script>
+
+
+
+
+
+<script src="/UI/alert.js"></script>
+<script src="/main/ftip.js"></script>
+
+<script>
+   // 等待页面加载完成后执行
+window.onload = function() {
+    // 延迟一秒钟后执行
+    
+    setTimeout(function() {
+    
+f.tip("页面已载入",3.5);
+        Swal.fire({
+            title: '<strong>提示</strong>',
+            icon: 'info',
+            html: '<b>本站管理员:[tag:管理员]</b><br><b>联系方式:[tag:联系]</b><br>',
+            showCloseButton: false,
+            showCancelButton: false,
+            focusConfirm: false,
+            confirmButtonText: '<i class="fa fa-thumbs-up"></i> 知道了!',
+            confirmButtonAriaLabel: 'Thumbs up, great!',
+            cancelButtonText: '<i class="fa fa-thumbs-down"></i> 取消注册!',
+            cancelButtonAriaLabel: 'Thumbs down'
+        });
+    }, 1000); // 设置延迟为1秒（1000毫秒）
+};
+
+</script>
+
+</body>
+</html>
