@@ -1,0 +1,12 @@
+<page:标题>开发教程</page:标题>
+<page:封面>/upload/4.png</page:封面>
+<page:时间>2024/4/30</page:时间>
+<page:正文>
+
+<div class="mdui-typo-headline"><i class="mdui-text-color-blue mdui-icon material-icons">brightness_1</i>详细说明</div><br>
+
+
+
+<img width="100%" src="/upload/5.png" alt="说明图片">
+
+</page:正文>

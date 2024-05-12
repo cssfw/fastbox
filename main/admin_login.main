@@ -40,7 +40,7 @@
 
   <!-- 卡片的媒体内容，可以包含图片、视频等媒体内容，以及标题、副标题 -->
   <div class="hidden mdui-card-media">
-    <img src="/upload/1.png"/>
+    <img src="/UI/we.png"/>
 
     <!-- 卡片中可以包含一个或多个菜单按钮 -->
     <div class="hidden mdui-card-menu">

@@ -64,39 +64,6 @@
 
 
 
-
-<script>
-  document.addEventListener("DOMContentLoaded", function(event) {
-    var element = document.getElementById("mdui-md-load");
-    element.classList.add("mdui-md-in");
-
-    window.addEventListener("load", function() {
-
-      element.classList.add("mdui-md-out");
-      
-    });
-  });
-</script>
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const hiddenElements = document.querySelectorAll(".hidden");
-    
-    let index = 0;
-    const interval = setInterval(() => {
-        if (index >= hiddenElements.length) {
-            clearInterval(interval);
-            return;
-        }
-        
-        const element = hiddenElements[index];
-        element.classList.add("in-on");
-        element.classList.remove("hidden");
-        
-        index++;
-    }, 35);
-});
-</script>
 <!-- MDUI JavaScript -->
 <script src="/UI/js/mdui.min.js"></script>
 <script src="/UI/alert.js"></script>

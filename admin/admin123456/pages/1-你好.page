@@ -1,4 +1,36 @@
 <page:标题>关于FastBOX</page:标题>
 <page:封面>/upload/1.png</page:封面>
 <page:时间>2024/4/30</page:时间>
-<page:正文><mark>欢迎使用快速建站框架！！！！</mark></page:正文>
+<page:正文>
+
+<div class="mdui-typo-headline"><i class="mdui-text-color-blue mdui-icon material-icons">brightness_1</i>什么是 FastBOX</div><br>
+
+
+<div class="mdui-typo">
+  <blockquote>
+    
+FastBOX 是由 FurryBOX 工作室开发的一款快速建站框架,适用于文章类网站,支持主题扩展,语法简洁明快,响应速度飞快
+
+  </blockquote>
+</div>
+
+<br><br>
+<div class="mdui-typo-headline"><i class="mdui-text-color-blue mdui-icon material-icons">brightness_1</i>我们的优势</div><br>
+
+
+<div class="mdui-typo">
+  <blockquote>
+    
+<b><i class="mdui-text-color-green mdui-icon material-icons">brightness_1</i>轻松上手</b><br>
+<b><i class="mdui-text-color-green mdui-icon material-icons">brightness_1</i>语法简洁</b><br>
+<b><i class="mdui-text-color-green mdui-icon material-icons">brightness_1</i>无SQL</b><br>
+<b><i class="mdui-text-color-green mdui-icon material-icons">brightness_1</i>迁移便捷</b><br>
+<b><i class="mdui-text-color-green mdui-icon material-icons">brightness_1</i>HTML语法</b><br>
+<b><i class="mdui-text-color-green mdui-icon material-icons">brightness_1</i>结构化设计</b><br>
+<b><i class="mdui-text-color-green mdui-icon material-icons">brightness_1</i>完全免费</b><br>
+
+
+  </blockquote>
+</div>
+
+</page:正文>
